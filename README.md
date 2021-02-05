@@ -3,15 +3,15 @@
 ###UF2: Processos i fils
 
 1. a1
-   - Callable
-   - Runnable
    - Executors
      - ThreadPoolExecutor
+        - Callable
      - ScheduledThreadPool
+        - Runnable
 2. a2 
    - ForkJoinPool
    - RecursiveTask
 
-
+Executor.md: What it is, 3 gestors types.
 
 [Githun tutorial](https://docs.github.com/es/github/writing-on-github/basic-writing-and-formatting-syntax#headings)

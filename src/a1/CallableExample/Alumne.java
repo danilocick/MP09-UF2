@@ -1,4 +1,4 @@
-package a1;
+package a1.CallableExample;
 
 public class Alumne {
     private String Nom;

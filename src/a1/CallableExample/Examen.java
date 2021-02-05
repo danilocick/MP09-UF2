@@ -1,4 +1,6 @@
-package a1;
+package a1.CallableExample;
+
+import a1.CallableExample.AlumneP;
 
 import java.util.ArrayList;
 import java.util.List;

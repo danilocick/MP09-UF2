@@ -1,4 +1,6 @@
-package a1;
+package a1.CallableExample;
+
+import a1.CallableExample.Alumne;
 
 public class Notes {
 
