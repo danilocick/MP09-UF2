@@ -29,3 +29,13 @@ poden resultar poc eficients si el seu càlcul requereix moltes crides recursive
 **Solució**: Per donar l’entitat idònia als càlculs i agilitzar l’eficiència, es combina 
 el càlcul iteratiu amb el recursiu. És a dir, es defineix un llindar o condició a partir
 de la qual seria preferible resoldre el problema iterativament.
+
+```
+if (el que queda per resoldre surt més a compte resoldre-ho directament ){ //lindar
+  execució seqüencial
+}else{
+  divisió recursiva de la tasca.
+  crida/planificació de l'execució paral·lela de les tasques creades
+  recollida dels resultats i combinació adequada per obtenir el calcul desitjat.
+}
+```
