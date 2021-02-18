@@ -11,7 +11,11 @@
 2. a2 
    - ForkJoinPool
    - RecursiveTask
-
+2. a3 
+   - semàfors:synchronized
+   - Monitors: wait(), notifyAll()
+   - Exercici: potDeGaletes
+   
 Executor.md: What it is, 3 gestors types.
 
 [Githun tutorial](https://docs.github.com/es/github/writing-on-github/basic-writing-and-formatting-syntax#headings)

@@ -1,4 +1,5 @@
-#CALLABLE
+#ThreadPoolExecutor
+##CALLABLE
 Retorna el valor de la funció ***call()*** quan aquest es cridat per un thread.
 ```
 static class Multiplicacio implements Callable<Integer> {
@@ -18,10 +19,11 @@ static class Multiplicacio implements Callable<Integer> {
 ```
 Inicialitzador:
 ```
-ThreadPoolExecutor executor = (ThreadPoolExecutor) Executors
-
-.newFixedThreadPool(3);
+ThreadPoolExecutor executor = (ThreadPoolExecutor) Executors.newFixedThreadPool(3);
 ```
+Això significa que si hi ha més de 3 tasques per executar, únicament n’enviarà 3 a executar
+i la resta es quedaran bloquejades fins que un fil acabi el seu processament.
+
 Executador:
 ```
 List <Future<Integer>> llistaResultats;
@@ -37,48 +39,12 @@ que anirà executant fins que una d’elles finalitzi sense error.
 En aquest moment retornarà el resultat obtingut per la tasca 
 finalitzada en un objecte Future.
 
-#RUNNABLE
-Executa una funció ***run()*** quan aquest es cridat per un thread pero NO retorna res.
-
+*Ojectes Future*: es generen com a conseqüència d’executar el mètode call de
+les instàncies Callable. Per cada Callable invocada es genera un objecte 
+Future que romandrà bloquejat fins que la instància Callable associada finalitzi.
 ```
-public class Cargol implements Runnable {
-    private String Nom;
-    private int metres;
-
-    public Cargol(String nom) {
-        Nom = nom;
-    }
-
-    public void addMetres(int m) {
-        metres += m;
-    }
-
-    public String getNom() {
-        return Nom;
-    }
-
-    public int getMetres() {
-        return metres;
-    }
-
-    @Override
-    public void run() {
-        int sprint = (int) Math.floor(Math.random()*50);
-        addMetres(sprint);
-        System.out.println(Nom + ": he fet " + sprint +" metres");
-
-
-    }
-}
+List <Future<Integer>> llistaResultats;
+llistaResultats = executor.invokeAll(llistaTasques);
 ```
-Inicialitzador:
-
-```
-ScheduledExecutorService schExService = Executors.newScheduledThreadPool(3);
-```
-Executador:
-El cargol treubanya, avança 2 cops en un 1 segon.
-```
-schExService.scheduleWithFixedDelay(treubanya, 2, 1, TimeUnit.SECONDS);
-schExService.shutdownNow();
-```
+*shutdown*: impideix executar noves tasques però deixa que els fils(Thread)
+en execució acabin.
