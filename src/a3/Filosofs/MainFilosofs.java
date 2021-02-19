@@ -2,10 +2,10 @@ package a3.Filosofs;
 
 public class MainFilosofs {
     public static void main(String[] args) {
-        Cobert c0 = new Cobert();
-        Cobert c1 = new Cobert();
-        Cobert c2 = new Cobert();
-        Cobert c3 = new Cobert();
+        Cobert c0 = new Cobert("0");
+        Cobert c1 = new Cobert("1");
+        Cobert c2 = new Cobert("2");
+        Cobert c3 = new Cobert("3");
 
         Filosof f0 = new Filosof("Arisotil", c3, c0);
         Filosof f1 = new Filosof("René", c0, c1);

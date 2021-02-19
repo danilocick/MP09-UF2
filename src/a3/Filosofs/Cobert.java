@@ -2,9 +2,11 @@ package a3.Filosofs;
 
 public class Cobert {
     private boolean lliure;
+    private String nom;
 
-    public Cobert() {
+    public Cobert(String nom) {
         lliure = true;
+        this.nom = nom;
     }
     public synchronized void Agafa() {
         try {
@@ -19,5 +21,9 @@ public class Cobert {
     public synchronized void Deixa() {
         lliure = true;
         notifyAll();
+    }
+
+    public synchronized String getNom() {
+        return nom;
     }
 }

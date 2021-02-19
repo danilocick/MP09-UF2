@@ -1,11 +1,12 @@
 package a3.Filosofs;
 
 public class Filosof extends Thread {
-    Cobert cobert1;
-    Cobert cobert2;
+    private Cobert cobert1;
+    private Cobert cobert2;
+    private String nom;
 
     public Filosof(String nom, Cobert cobert1, Cobert cobert2) {
-        super(nom);
+        this.nom=nom;
         this.cobert1 = cobert1;
         this.cobert2 = cobert2;
     }
@@ -16,7 +17,7 @@ public class Filosof extends Thread {
             //Agafa el comandament
             cobert1.Agafa();
             cobert2.Agafa();
-            System.out.println("tinc els coberts: "+cobert1+" i "+cobert2);
+            System.out.println(nom+": tinc els coberts: "+cobert1.getNom()+" i "+cobert2.getNom());
 
             //Menja
             try {
