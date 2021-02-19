@@ -4,7 +4,10 @@ Tipus de processos:
 
 Independent: no necessita ajuda ni cooperació d’altres processos.
 Cooperant: dissenyats per treballar conjuntament amb altres processos.
-El procés de sincronització permet que els processos que s’executen de forma simultània es coordinin, aturant l’execució d’aquells que vagin més avançats fins que es compleixin les condicions òptimes per estar segurs que els resultats finals seran correctes.
+El procés de sincronització permet que els processos que s’executen de 
+forma simultània es coordinin, aturant l’execució d’aquells que vagin més avançats 
+fins que es compleixin les condicions òptimes per estar segurs que els resultats 
+finals seran correctes.
 
 ###Mètodes de sincronització
 
