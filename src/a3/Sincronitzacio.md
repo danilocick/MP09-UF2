@@ -20,4 +20,5 @@ S’han d’establir protocols d’execució perquè no accedeixin de forma conc
 - Comunicació per missatges: ls processos s’intercanvien missatges per comunicar-se i sincronitzar-se.
 És la comunicació típica en sistemes distribuïts i és utiltzada també en sistemes no distribuïts.
 
-De cara a evitar errors de sincronització existeixen: [semafors](src/a3/Semàfors.md) o [monitors](src/a3/Monitors.md)
+De cara a evitar errors de sincronització existeixen:
+[semafors](src/a3/Semàfors.md) o [monitors](src/a3/Monitors.md)
