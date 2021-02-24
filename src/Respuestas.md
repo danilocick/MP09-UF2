@@ -1,0 +1,23 @@
+EXAMEN:
+1.a
+2.d,c,h,a,f
+3.
+4.t
+5.t
+6.
+7.f
+8.B(CREO)
+9.A(CREO)
+10.a
+11.c
+12.B(CREO)
+13.E,B(CREO)
+14.t
+15.f
+16.f
+17.f
+18.d
+19.f
+20.TAL VEZ
+21.a
+22.c,b
