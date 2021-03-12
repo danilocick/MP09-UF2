@@ -29,3 +29,6 @@ el mètode invokeAll fa un invocació de fork per cada una de les tasques rebude
 a paràmetre i seguidament s’espera a la finalització de cada fil amb una crida al mètode
  join de les tasques engegades. invokeAll no retorna cap resultat, per tant no resulta gaire 
  útil d’utilitzar amb objectes de tipus RecursiveTask.***
+ 
+ 
+ [ENLACE INTERES CON EJEMPLOS](https://www.arquitecturajava.com/java-callable-interface-y-su-uso/)
