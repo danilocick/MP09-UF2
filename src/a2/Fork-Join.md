@@ -1,5 +1,5 @@
-#Fork-Join 
-##Class ForkJoinPool 
+# Fork-Join 
+## Class ForkJoinPool 
 Es una evolució als patrons de Executor. Processa les tasques amb l’algoritme per robatori (work-stealing).
  Això vol dir que el gestor del pool busca fils poc actius i hi intercanvia tasques en espera.
 
@@ -8,7 +8,7 @@ Les tasques poden crear noves tasques que s’incorporaran a la cua de tasques p
   paral·lel. Per aquest motiu Fork_Join és una alternativa ideal per algoritmes que puguin 
   resoldre’s de forma recursiva ja que s’aconseguirà la màxima eficiència.
 
-##Class ForkJoinTask
+## Class ForkJoinTask
 
 Aquesta classe està implementada per dues calsses:
 
